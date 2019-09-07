@@ -79,7 +79,7 @@ class Bureau(models.Model):
 
     class Meta:
         verbose_name = _("Bureau")
-        verbose_name_plural = _("Bureaus")
+        verbose_name_plural = _("Bureaux")
 
     def __str__(self):
         return self.president
