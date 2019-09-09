@@ -22,6 +22,7 @@ class Article(models.Model):
     name = models.CharField("nom de l'articles", max_length=100, blank=True, null=True)
     models.DateTimeField(_("date de publication"), auto_now=False)
     categories = models.ForeignKey(Categorie, related_name='categories', on_delete=models.CASCADE)
+    picture= models.ImageField(_("picture"), upload_to=None, height_field=None, width_field=None, max_length=None, default= "picture",  null = True, blank=True)
     
     
     
