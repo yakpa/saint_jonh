@@ -7,7 +7,8 @@ from .models import Article, Categorie
 
 # Create your views here.
 def index (request):
-    name = Article.objects.all()
+    name = Article.objects.get(categories=1)
+    print(name)
     return render(request, 'blog/index.html', {'name': name})
 
 
